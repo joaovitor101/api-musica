@@ -69,13 +69,14 @@ Exemplo de requisição:
 	"year": 2022,
 	"genre": "trap",
 	"duration": 200, 
-	"track":[
+	"track": [
 		{
-			"title": "suns flower",
+			"title": "Sunflower",
 			"duration": 200
 		}
 	]
 }
+
 ```
 
 #### Respostas:
