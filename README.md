@@ -1,4 +1,4 @@
-# Exemplo de documentação de API
+
 ![NPM](https://img.shields.io/npm/l/react)
 
 # api-musica
