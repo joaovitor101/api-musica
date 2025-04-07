@@ -251,7 +251,7 @@ Exemplo de resposta:
 
 ```
 {
-    "error": "Jogo não encontrado!"
+    "error": "Música não encontrada!"
 }
 ```
 
