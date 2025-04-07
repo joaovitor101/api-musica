@@ -1,7 +1,7 @@
 
 ![NPM](https://img.shields.io/npm/l/react)
 
-# api-musica
+# Api-musica
 Esta API é utilizada para gerenciar um sistema de músicas, permitindo operações de CRUD (criar, ler, atualizar e deletar) sobre músicas.
 
 ## Endpoints
