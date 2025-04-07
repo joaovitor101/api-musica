@@ -83,7 +83,7 @@ Exemplo de requisição:
 ##### Criado! 201
 Caso essa resposta aconteça, a nova música foi criada com sucesso.
 
-Exemplo de resposta: Nenhum conteúdo retornado.
+Exemplo de resposta: Created.
 
 ##### Erro Interno do Servidor! 500
 Caso essa resposta aconteça, significa que ocorreu um erro interno no servidor.
@@ -136,8 +136,8 @@ Esse endpoint é responsável por atualizar as informações de uma música espe
 
 #### Parâmetros:
 id: ID do jogo a ser atualizado.<br>
-artist: nome do artista<br>
-album: nome do album <br>
+artist: Nome do artista<br>
+album: Nome do album <br>
 year: Ano de lançamento do jogo.<br>
 genre: Gênero musical do album<br>
 duration: Duração da música<br>
