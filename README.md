@@ -50,12 +50,12 @@ Exemplo de resposta:
 ```
 
 ### - POST /musicas
-Esse endpoint é responsável por cadastrar um novo jogo no banco de dados.
+Esse endpoint é responsável por cadastrar um novo musica no banco de dados.
 
 #### Parâmetros:
 artist: nome do artista<br>
 album: nome do album <br>
-year: Ano de lançamento do jogo.<br>
+year: Ano de lançamento do musica.<br>
 genre: Gênero musical do album<br>
 duration: Duração da música<br>
 track: Descrições adicionais sobre a música.
@@ -135,10 +135,10 @@ Exemplo de resposta:
 Esse endpoint é responsável por atualizar as informações de uma música específica pelo seu ID.
 
 #### Parâmetros:
-id: ID do jogo a ser atualizado.<br>
+id: ID do musica a ser atualizado.<br>
 artist: Nome do artista<br>
 album: Nome do album <br>
-year: Ano de lançamento do jogo.<br>
+year: Ano de lançamento do musica.<br>
 genre: Gênero musical do album<br>
 duration: Duração da música<br>
 track: Descrições adicionais sobre a música.
