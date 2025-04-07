@@ -21,20 +21,21 @@ Exemplo de resposta:
 {
     "musicas": [
         {
-	        "artist": "Post Malone",
-	        "album": "Album Post Malone",
-	        "year": 2022,
-	        "genre": "trap",
-	        "duration": 200, 
-	        "track":[
-		        {
-			        "title": "suns flower",
-			        "duration": 200
-		        }
+            "artist": "Post Malone",
+            "album": "Album Post Malone",
+            "year": 2022,
+            "genre": "trap",
+            "duration": 200,
+            "track": [
+                {
+                    "title": "Sunflower",
+                    "duration": 200
+                }
             ]
-        },
+        }
     ]
 }
+
 ```
 
 ##### Erro Interno do Servidor! 500
