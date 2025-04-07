@@ -45,7 +45,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Erro interno do servidor!"
+    "error": "Erro interno do servidor!"
 }
 ```
 
@@ -92,7 +92,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Erro interno do servidor!"
+    "error": "Erro interno do servidor!"
 }
 ```
 
@@ -116,7 +116,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "ID inválido!"
+    "error": "ID inválido!"
 }
 ```
 
@@ -127,7 +127,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Erro interno do servidor!"
+    "error": "Erro interno do servidor!"
 }
 ```
 
@@ -196,7 +196,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "ID inválido ou dados malformados!"
+    "error": "ID inválido ou dados malformados!"
 }
 ```
 
@@ -207,7 +207,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Erro interno do servidor!"
+    "error": "Erro interno do servidor!"
 }
 ```
 
@@ -251,7 +251,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Jogo não encontrado!"
+    "error": "Jogo não encontrado!"
 }
 ```
 
@@ -262,7 +262,7 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "ID inválido!"
+    "error": "ID inválido!"
 }
 ```
 
@@ -273,6 +273,6 @@ Exemplo de resposta:
 
 ```
 {
-    "err": "Erro interno do servidor!"
+    "error": "Erro interno do servidor!"
 }
 ```
