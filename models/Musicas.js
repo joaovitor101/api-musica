@@ -3,15 +3,14 @@ import mongoose from "mongoose";
 // Documento aninhado
 const trackSchema = new mongoose.Schema({
   title: String,
-  duration: Number,
+  feat: [String],
+  duration: Number
 });
 
 const musicaSchema = new mongoose.Schema({
   artist: String,
   album: String,
   year: Number,
-  genre: String,
-  duration: Number,
   track: [trackSchema] // Array de objetos
 });
 

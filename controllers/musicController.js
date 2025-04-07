@@ -21,9 +21,9 @@ const createMusica = async (req, res) => {
 
     // Desestruturação
     // Capturando valores
-    const { artist, album, year, genre, duration, track } = req.body;
+    const { artist, album, year, track } = req.body;
     // Cadastrando no banco
-    await musicaService.Create(artist, album, year, genre, duration, track);
+    await musicaService.Create(artist, album, year, track);
     res.sendStatus(201); // Código 201 (CREATED)
   } catch (error) {
     console.log(error);
@@ -55,8 +55,8 @@ const updateMusica = async (req, res) => {
       const id = req.params.id;
       // Desestruturação
       //const title = req.body.title
-      const { artist, album, year, genre, duration, track} = req.body;
-      musicaService.Update(id, artist, album, year, genre, duration, track );
+      const { artist, album, year, track} = req.body;
+      musicaService.Update(id, artist, album, year, track );
       res.sendStatus(200); // Código 200 (OK): Requisição bem sucedida
     } else {
       res.sendStatus(400); // Código 400 (Bad Request): Requisição mal formada

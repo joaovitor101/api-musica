@@ -19,14 +19,13 @@ class musicaService {
   }
 
   // Função para cadastrar jogos
-  async Create(artist, album, year, genre, duration, track) {
+  async Create(artist, album, year, track) {
     try {
       const newMusica = new Musica({
         artist, 
         album,
         year,
-        genre,
-        duration,
+
         track
       });
       // Método do mongoose para cadastrar .save()
@@ -47,15 +46,13 @@ class musicaService {
   }
 
   // Função para alterar jogos
-  async Update(id,artist, album, year, genre, duration, track) {
+  async Update(id,artist, album, year, track) {
     try {
       await Musica.findByIdAndUpdate(id, {
 
         artist, 
         album,
         year,
-        genre,
-        duration,
         track
       });
       console.log(`Dados do Music com a id: ${id} alterados com sucesso.`);
