@@ -1,49 +1,38 @@
 # Exemplo de documentação de API
 ![NPM](https://img.shields.io/npm/l/react)
 
-# API The Games
-Esta API é utilizada para gerenciar um catálogo de jogos, permitindo operações de CRUD (criar, ler, atualizar e deletar) sobre jogos.
+# api-musica
+Esta API é utilizada para gerenciar um sistema de músicas, permitindo operações de CRUD (criar, ler, atualizar e deletar) sobre músicas.
 
 ## Endpoints
-### - GET /games
-Esse endpoint é responsável por retornar a listagem de todos os jogos cadastrados no banco de dados.
+### - GET /musicas
+Esse endpoint é responsável por retornar a listagem de todas as músicas cadastrados no banco de dados.
 
 #### Parâmetros:
 Nenhum
 
 #### Respostas:
 ##### OK! 200
-Caso essa resposta aconteça, você vai receber a listagem de todos os jogos.
+Caso essa resposta aconteça, você vai receber a listagem de todas as músicas.
 
 Exemplo de resposta:
 
 ```
 {
-    "games": [
+    "musicas": [
         {
-            "title": "Call of Duty MW",
-            "year": 2019,
-            "price": 60,
-            "descriptions": [
-                {
-                    "genre": "Action",
-                    "platform": "PC",
-                    "rating": "M"
-                }
+	        "artist": "Post Malone",
+	        "album": "Album Post Malone",
+	        "year": 2022,
+	        "genre": "trap",
+	        "duration": 200, 
+	        "track":[
+		        {
+			        "title": "suns flower",
+			        "duration": 200
+		        }
             ]
         },
-        {
-            "title": "Sea of Thieves",
-            "year": 2018,
-            "price": 40,
-            "descriptions": [
-                {
-                    "genre": "Adventure",
-                    "platform": "Xbox",
-                    "rating": "T"
-                }
-            ]
-        }
     ]
 }
 ```
@@ -63,31 +52,34 @@ Exemplo de resposta:
 Esse endpoint é responsável por cadastrar um novo jogo no banco de dados.
 
 #### Parâmetros:
-title: Título do jogo.<br>
+artist: nome do artista<br>
+album: nome do album <br>
 year: Ano de lançamento do jogo.<br>
-price: Preço do jogo.<br>
-descriptions: Descrições adicionais sobre o jogo (opcional).
+genre: Gênero musical do album<br>
+duration: Duração da música<br>
+track: Descrições adicionais sobre a música.
 
 Exemplo de requisição:
 
 ```
 {
-    "title": "Minecraft",
-    "year": 2012,
-    "price": 20,
-    "descriptions": [
-        {
-            "genre": "Sandbox",
-            "platform": "PC",
-            "rating": "E"
-        }
-    ]
+	"artist": "Post Malone",
+	"album": "Album Post Malone",
+	"year": 2022,
+	"genre": "trap",
+	"duration": 200, 
+	"track":[
+		{
+			"title": "suns flower",
+			"duration": 200
+		}
+	]
 }
 ```
 
 #### Respostas:
 ##### Criado! 201
-Caso essa resposta aconteça, o novo jogo foi criado com sucesso.
+Caso essa resposta aconteça, a nova música foi criada com sucesso.
 
 Exemplo de resposta: Nenhum conteúdo retornado.
 
@@ -103,17 +95,17 @@ Exemplo de resposta:
 ```
 
 
-### - DELETE /game/
-Esse endpoint é responsável por deletar um jogo específico pelo seu ID.
+### - DELETE /musicas/
+Esse endpoint é responsável por deletar uma música específica pelo seu ID.
 
 #### Parâmetros:
-id: ID do jogo a ser deletado.
+id: ID da música a ser deletado.
 
 #### Respostas:
 ##### Sem Conteúdo! 204
-Caso essa resposta aconteça, o jogo foi deletado com sucesso e não há conteúdo para retornar ao cliente.
+Caso essa resposta aconteça, a música foi deletada com sucesso e não há conteúdo para retornar ao cliente.
 
-Exemplo de resposta: Nenhum conteúdo retornado.
+Exemplo de resposta: Deletada com sucesso.
 
 ##### Requisição Inválida! 400
 Caso essa resposta aconteça, significa que o ID fornecido é inválido.
@@ -137,53 +129,60 @@ Exemplo de resposta:
 }
 ```
 
-### - PUT /game/
-Esse endpoint é responsável por atualizar as informações de um jogo específico pelo seu ID.
+### - PUT /musicas/
+Esse endpoint é responsável por atualizar as informações de uma música específica pelo seu ID.
 
 #### Parâmetros:
 id: ID do jogo a ser atualizado.<br>
-title: Título do jogo (opcional).<br>
-year: Ano de lançamento do jogo (opcional).<br>
-price: Preço do jogo (opcional).<br>
-descriptions: Descrições adicionais sobre o jogo (opcional).<br>
+artist: nome do artista<br>
+album: nome do album <br>
+year: Ano de lançamento do jogo.<br>
+genre: Gênero musical do album<br>
+duration: Duração da música<br>
+track: Descrições adicionais sobre a música.
+
 
 Exemplo de requisição:
 
 ```
 {
-    "title": "Minecraft Updated",
-    "year": 2013,
-    "price": 25,
-    "descriptions": [
-        {
-            "genre": "Sandbox",
-            "platform": "PC",
-            "rating": "E"
-        }
-    ]
+	"artist": "Post Malone",
+	"album": "Album Post Malone",
+	"year": 2022,
+	"genre": "trap",
+	"duration": 200, 
+	"track":[
+		{
+			"title": "suns flower",
+			"duration": 200
+		}
+	]
 }
 ```
 
 #### Respostas:
 ##### OK! 200
-Caso essa resposta aconteça, as informações do jogo foram atualizadas com sucesso.
+Caso essa resposta aconteça, as informações da música foram atualizadas com sucesso.
 
 Exemplo de resposta:
 
 ```
 {
-    "game": {
-        "title": "Minecraft Updated",
-        "year": 2013,
-        "price": 25,
-        "descriptions": [
-            {
-                "genre": "Sandbox",
-                "platform": "PC",
-                "rating": "E"
-            }
-        ]
-    }
+    "musicas": [
+        {
+	        "artist": "Post Malone",
+	        "album": "Album Post Malone",
+	        "year": 2022,
+	        "genre": "trap",
+	        "duration": 200, 
+	        "track":[
+		        {
+			        "title": "suns flower",
+			        "duration": 200
+		        }
+            ]
+        },
+    ]
 }
 ```
 
@@ -209,37 +208,40 @@ Exemplo de resposta:
 }
 ```
 
-### - GET /game/
-Esse endpoint é responsável por retornar as informações de um jogo específico pelo seu ID.
+### - GET /musicas/
+Esse endpoint é responsável por retornar as informações de uma música específica pelo seu ID.
 
 #### Parâmetros:
-id: ID do jogo a ser consultado.
+id: ID da música a ser consultada.
 
 #### Respostas:
 ##### OK! 200
-Caso essa resposta aconteça, você vai receber as informações do jogo solicitado.
+Caso essa resposta aconteça, você vai receber as informações da música solicitada.
 
 Exemplo de resposta:
 
 ```
 {
-    "game": {
-        "title": "Minecraft",
-        "year": 2012,
-        "price": 20,
-        "descriptions": [
-            {
-                "genre": "Sandbox",
-                "platform": "PC",
-                "rating": "E"
-            }
-        ]
-    }
+    "musicas": [
+        {
+	        "artist": "Post Malone",
+	        "album": "Album Post Malone",
+	        "year": 2022,
+	        "genre": "trap",
+	        "duration": 200, 
+	        "track":[
+		        {
+			        "title": "suns flower",
+			        "duration": 200
+		        }
+            ]
+        },
+    ]
 }
 ```
 
 ##### Não Encontrado! 404
-Caso essa resposta aconteça, significa que o jogo com o ID fornecido não foi encontrado.
+Caso essa resposta aconteça, significa que a música com a ID fornecida não foi encontrado.
 
 Exemplo de resposta:
 
