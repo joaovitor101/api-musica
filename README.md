@@ -19,21 +19,23 @@ Exemplo de resposta:
 
 ```
 {
-    "musicas": [
-        {
-            "artist": "Post Malone",
-            "album": "Album Post Malone",
-            "year": 2022,
-            "genre": "trap",
-            "duration": 200,
-            "track": [
-                {
-                    "title": "Sunflower",
-                    "duration": 200
-                }
-            ]
-        }
-    ]
+	"musicas": [
+		{
+			"artist": "Post Malone 2",
+			"album": "F-1 Trillion",
+			"year": 2024,
+			"track": [
+				{
+					"title": "suns flower",
+					"feat": [
+						"Post Malone",
+						"Tim McGraw"
+					],
+					"duration": 150,
+				}
+			],
+		}
+	]
 }
 
 ```
@@ -56,8 +58,6 @@ Esse endpoint é responsável por cadastrar um novo musica no banco de dados.
 artist: nome do artista<br>
 album: nome do album <br>
 year: Ano de lançamento do musica.<br>
-genre: Gênero musical do album<br>
-duration: Duração da música<br>
 track: Descrições adicionais sobre a música.
 
 Exemplo de requisição:
@@ -65,14 +65,13 @@ Exemplo de requisição:
 ```
 {
 	"artist": "Post Malone",
-	"album": "Album Post Malone",
-	"year": 2022,
-	"genre": "trap",
-	"duration": 200, 
-	"track": [
+	"album": "F-1 Trillion",
+	"year": 2024,
+	"track":[
 		{
-			"title": "Sunflower",
-			"duration": 200
+			"title": "suns flower",
+			"feat": ["Post Malone", "Tim McGraw"],
+			"duration": 150
 		}
 	]
 }
@@ -139,8 +138,6 @@ id: ID do musica a ser atualizado.<br>
 artist: Nome do artista<br>
 album: Nome do album <br>
 year: Ano de lançamento do musica.<br>
-genre: Gênero musical do album<br>
-duration: Duração da música<br>
 track: Descrições adicionais sobre a música.
 
 
@@ -149,14 +146,13 @@ Exemplo de requisição:
 ```
 {
 	"artist": "Post Malone",
-	"album": "Album Post Malone",
-	"year": 2022,
-	"genre": "trap",
-	"duration": 200, 
+	"album": "F-1 Trillion",
+	"year": 2024,
 	"track":[
 		{
 			"title": "suns flower",
-			"duration": 200
+			"feat": ["Post Malone", "Tim McGraw"],
+			"duration": 150
 		}
 	]
 }
@@ -170,21 +166,23 @@ Exemplo de resposta:
 
 ```
 {
-    "musicas": [
-        {
-            "artist": "Post Malone",
-            "album": "Album Post Malone",
-            "year": 2022,
-            "genre": "trap",
-            "duration": 200,
-            "track": [
-                {
-                    "title": "Sunflower",
-                    "duration": 200
-                }
-            ]
-        }
-    ]
+	"musicas": [
+		{
+			"artist": "Post Malone 2",
+			"album": "F-1 Trillion",
+			"year": 2024,
+			"track": [
+				{
+					"title": "suns flower",
+					"feat": [
+						"Post Malone",
+						"Tim McGraw"
+					],
+					"duration": 150,
+				}
+			],
+		}
+	]
 }
 
 ```
@@ -225,21 +223,23 @@ Exemplo de resposta:
 
 ```
 {
-    "musicas": [
-        {
-            "artist": "Post Malone",
-            "album": "Album Post Malone",
-            "year": 2022,
-            "genre": "trap",
-            "duration": 200,
-            "track": [
-                {
-                    "title": "Sunflower",
-                    "duration": 200
-                }
-            ]
-        }
-    ]
+	"musicas": [
+		{
+			"artist": "Post Malone 2",
+			"album": "F-1 Trillion",
+			"year": 2024,
+			"track": [
+				{
+					"title": "suns flower",
+					"feat": [
+						"Post Malone",
+						"Tim McGraw"
+					],
+					"duration": 150,
+				}
+			],
+		}
+	]
 }
 
 ```
