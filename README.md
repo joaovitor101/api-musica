@@ -19,7 +19,7 @@ Exemplo de resposta:
 
 ```
 {
-	"musicas": [
+	"musica": [
 		{
 			"artist": "Post Malone 2",
 			"album": "F-1 Trillion",
@@ -166,7 +166,7 @@ Exemplo de resposta:
 
 ```
 {
-	"musicas": [
+	"musica": [
 		{
 			"artist": "Post Malone 2",
 			"album": "F-1 Trillion",
@@ -223,7 +223,7 @@ Exemplo de resposta:
 
 ```
 {
-	"musicas": [
+	"musica": [
 		{
 			"artist": "Post Malone 2",
 			"album": "F-1 Trillion",
