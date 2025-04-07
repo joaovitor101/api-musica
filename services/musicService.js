@@ -67,12 +67,12 @@ class musicaService {
   // Função para listar um único jogo
   async getOne(id) {
     try {
-      const Musica = await Musica.findOne({ _id: id });
-      return Musica;
+      const musicaEncontrada = await Musica.findOne({ _id: id });
+      return musicaEncontrada;
     } catch (error) {
       console.log(error);
     }
-  }
+  }  
 }
 
 export default new musicaService();
