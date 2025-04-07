@@ -49,7 +49,7 @@ Exemplo de resposta:
 }
 ```
 
-### - POST /game
+### - POST /musicas
 Esse endpoint é responsável por cadastrar um novo jogo no banco de dados.
 
 #### Parâmetros:
